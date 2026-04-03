@@ -1,0 +1,112 @@
+:root {
+  --bg: #f4edd7;
+  --panel: rgba(20, 24, 31, 0.84);
+  --accent: #ffd24a;
+  --text: #f6f7f9;
+  --ok: #6dde8a;
+  --warn: #ff9966;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+}
+
+canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#hud {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  width: min(360px, calc(100vw - 32px));
+  padding: 14px 16px;
+  background: var(--panel);
+  color: var(--text);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  backdrop-filter: blur(6px);
+  z-index: 10;
+}
+
+#hud h1 {
+  margin: 0 0 8px;
+  font-size: 1.35rem;
+  color: #ffeb3b;
+}
+
+#hud p {
+  margin: 4px 0;
+}
+
+#statusLabel {
+  font-weight: 700;
+}
+
+.actions {
+  margin: 10px 0;
+  display: grid;
+  gap: 8px;
+  grid-template-columns: 1fr 1fr;
+}
+
+button {
+  border: 0;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  background: #f0f3f8;
+}
+
+button:hover {
+  transform: translateY(-1px);
+}
+
+#easyBtn {
+  background: #d6f5dd;
+}
+
+#hardBtn {
+  background: #ffe0cf;
+}
+
+#nextBtn {
+  background: #d9e7ff;
+}
+
+#resetBtn {
+  background: #f4d8d8;
+}
+
+ol {
+  margin: 8px 0 0;
+  padding-left: 18px;
+  font-size: 0.9rem;
+  line-height: 1.35;
+}
+
+@media (max-width: 720px) {
+  #hud {
+    top: 8px;
+    left: 8px;
+    width: calc(100vw - 16px);
+  }
+}

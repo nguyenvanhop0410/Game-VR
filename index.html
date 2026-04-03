@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VR Color Circle - WebXR</title>
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+    <div id="app">
+      <aside id="hud" aria-live="polite">
+        <h1>VR Color Circle</h1>
+        <p id="levelLabel">Level: -</p>
+        <p id="modeLabel">Mode: -</p>
+        <p id="timerLabel">Time: -</p>
+        <p id="statusLabel">Sẵn sàng</p>
+        <div class="actions">
+          <button id="easyBtn">Start Easy</button>
+          <button id="hardBtn">Start Hard</button>
+          <button id="nextBtn">Next Level</button>
+          <button id="resetBtn">Reset</button>
+        </div>
+        <ol>
+          <li>Desktop: Không cần bấm phím. Click bi màu rồi click ô màu tương ứng.</li>
+          <li>VR: Dùng controller để nhặt và thả vào đúng ô.</li>
+          <li>Nhấn F để đưa camera về vùng gameplay nếu lạc góc nhìn.</li>
+        </ol>
+      </aside>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
