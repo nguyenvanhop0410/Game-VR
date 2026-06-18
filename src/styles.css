@@ -96,6 +96,50 @@ button:hover {
   background: #f4d8d8;
 }
 
+#victoryOverlay {
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(9, 12, 20, 0.78);
+  z-index: 30;
+  padding: 16px;
+}
+
+#victoryOverlay.show {
+  display: flex;
+}
+
+.victory-card {
+  width: min(460px, 100%);
+  background: linear-gradient(165deg, rgba(255, 214, 86, 0.98), rgba(255, 179, 61, 0.98));
+  border: 2px solid rgba(80, 43, 0, 0.35);
+  border-radius: 18px;
+  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.28);
+  text-align: center;
+  color: #1f1300;
+  padding: 24px 20px;
+}
+
+.victory-card h2 {
+  margin: 0 0 10px;
+  font-size: 2rem;
+  line-height: 1.1;
+}
+
+.victory-card p {
+  margin: 0 0 16px;
+  font-size: 1rem;
+  line-height: 1.45;
+}
+
+#playAgainBtn {
+  background: #fff8e5;
+  color: #362200;
+  border: 1px solid rgba(80, 43, 0, 0.35);
+}
+
 ol {
   margin: 8px 0 0;
   padding-left: 18px;
